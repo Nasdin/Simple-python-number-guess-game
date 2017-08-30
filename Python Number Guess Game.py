@@ -6,6 +6,7 @@ print('Enter your desired difficulty level from 1 to 5')
 lv = input()
 lv = int(lv)
 
+
 while True:    
     a = random.randint(1, lv+4)
     b = random.randint(1, lv+4)
@@ -14,7 +15,7 @@ while True:
     givenList = [a, b, c, d]
     
     while all(givenList.index(v) == i for i, v in enumerate(givenList)):
-        print ('Debug: Given list is ' + str(givenList))        
+              
         tries = 0
         gold = 0
         silver = 0
